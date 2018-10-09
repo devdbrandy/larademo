@@ -11,9 +11,5 @@
     },
     "APP_DEBUG": false
   },
-  "buildpacks": [
-    {
-      "url": "heroku/php"
-    }
-  ]
+  "buildpacks": []
 }
