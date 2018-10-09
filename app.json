@@ -3,7 +3,6 @@
   "description": "Simple laravel boilerplate demonstrating a deploy with heroku",
   "repository": "https://github.com/devdbrandy/larademo",
   "keywords": ["php", "laravel", "skeleton"],
-  "website": "larademo.herokuapp.com",
   "env": {
     "APP_ENV": "production",
     "APP_NAME": "Larademo",
