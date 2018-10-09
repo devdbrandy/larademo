@@ -10,8 +10,11 @@
       "description": "Application encryption key",
       "generator": "secret"
     },
-    "APP_DEBUG": false,
+    "APP_DEBUG": "false",
     "LOG_CHANNEL": "errorlog"
   },
-  "buildpacks": []
+  "buildpacks": [],
+  "scripts": {
+    "postdeploy": "postdeploy.sh"
+  }
 }
