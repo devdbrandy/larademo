@@ -1,0 +1,19 @@
+{
+  "name": "larademo",
+  "description": "Simple laravel boilerplate demonstrating a deploy with heroku",
+  "website": "larademo.herokuapp.com",
+  "env": {
+    "APP_ENV": "production",
+    "APP_NAME": "Larademo",
+    "APP_KEY": {
+      "description": "Application keys",
+      "generator": "secret"
+    },
+    "APP_DEBUG": false
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
