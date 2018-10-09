@@ -5,7 +5,10 @@
   "env": {
     "APP_ENV": "production",
     "APP_NAME": "Larademo",
-    "APP_KEY": "base64:sSV8cQZbZwwaianDbU2FUhqC6oDwoojTdgetRPL2KH0=",
+    "APP_KEY": {
+      "description": "Application secret key",
+      "generator": "secret"
+    },
     "APP_DEBUG": false
   },
   "buildpacks": []
