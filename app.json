@@ -1,15 +1,18 @@
 {
-  "name": "larademo",
+  "name": "test-larademo",
   "description": "Simple laravel boilerplate demonstrating a deploy with heroku",
+  "repository": "https://github.com/devdbrandy/larademo",
+  "keywords": ["php", "laravel", "skeleton"],
   "website": "larademo.herokuapp.com",
   "env": {
     "APP_ENV": "production",
     "APP_NAME": "Larademo",
     "APP_KEY": {
-      "description": "Application secret key",
+      "description": "Application encryption key",
       "generator": "secret"
     },
-    "APP_DEBUG": false
+    "APP_DEBUG": false,
+    "LOG_CHANNEL": "errorlog"
   },
   "buildpacks": []
 }
