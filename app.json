@@ -7,7 +7,7 @@
     "APP_ENV": "production",
     "APP_NAME": "Larademo",
     "APP_KEY": {
-      "description": "Application encryption key",
+      "description": "Laravel encryption key - Copy KEY from https://keygen.io, and append to `base64:` eg. base64:KEY",
       "required": true
     },
     "APP_DEBUG": "false",
