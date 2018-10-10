@@ -1,5 +1,5 @@
 {
-  "name": "test-larademo",
+  "name": "larademo",
   "description": "Simple laravel boilerplate demonstrating a deploy with heroku",
   "repository": "https://github.com/devdbrandy/larademo",
   "keywords": ["php", "laravel", "skeleton"],
@@ -8,7 +8,7 @@
     "APP_NAME": "Larademo",
     "APP_KEY": {
       "description": "Application encryption key",
-      "generator": "secret"
+      "required": true
     },
     "APP_DEBUG": "false",
     "LOG_CHANNEL": "errorlog"
