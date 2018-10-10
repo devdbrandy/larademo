@@ -1,5 +1,17 @@
 <?php
 
+if (env('DATABASE_URL')) {
+    $url = parse_url(env('DATABASE_URL'));
+
+    $scheme = $url['scheme'] == 'postgres' ? 'pgsql' : 'mysql';
+    putenv('DB_CONNECTION=' . $scheme);
+    putenv('DB_DATABASE=' . substr($url['path'], 1)); // remove leading slash from path
+    putenv('DB_HOST=' . $url['host']);
+    putenv('DB_PORT=' . $url['port']);
+    putenv('DB_USERNAME=' . $url['user']);
+    putenv('DB_PASSWORD=' . $url['pass']);
+}
+
 return [
 
     /*
